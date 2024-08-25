@@ -1,6 +1,7 @@
 
 import './App.css'
-import { Login } from './pages/Login/Login'
+import { Feed } from './pages/Feed'
+import { Login } from './pages/Login'
 
 function App() {
   
