@@ -1,12 +1,13 @@
 import React from 'react';
-import { FaHome, FaHashtag, FaBell, FaEnvelope } from 'react-icons/fa';
+
 import { NavLink } from 'react-router-dom';
+import { ExploreIcon, HomeIcon, MessagesIcon, NotificationIcon } from '../components/Icon';
 
 const menuItems = [
-  { id: 1, name: 'Home', icon: <FaHome />, path: '/' },
-  { id: 2, name: 'Explore', icon: <FaHashtag />, path: '/explore' },
-  { id: 3, name: 'Notifications', icon: <FaBell />, path: '/notifications' },
-  { id: 4, name: 'Messages', icon: <FaEnvelope />, path: '/messages' }
+  { id: 1, name: 'Home', icon: <HomeIcon />, path: '/' },
+  { id: 2, name: 'Explore', icon: <ExploreIcon />, path: '/explore' },
+  { id: 3, name: 'Notifications', icon: <NotificationIcon />, path: '/notifications' },
+  { id: 4, name: 'Messages', icon: <MessagesIcon />, path: '/messages' }
 ];
 
 const Sidebar = () => {
