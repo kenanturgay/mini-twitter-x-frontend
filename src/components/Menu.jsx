@@ -1,17 +1,13 @@
+import menuItems from '../constants/menuItems';
+import { MenuItem } from './MenuItem';
 
-const menuItems = [
-  { id: 1, name: 'Home', icon: <FaHome />, path: '/' },
-  { id: 2, name: 'Explore', icon: <FaHashtag />, path: '/explore' },
-  { id: 3, name: 'Notifications', icon: <FaBell />, path: '/notifications' },
-  { id: 4, name: 'Messages', icon: <FaEnvelope />, path: '/messages' }
-];
 
 export const Menu = () => {
   return (
-    <nav className="sidebar">
-    <ul> 
-      
-      
+    <nav>
+    <ul className="space-y-4">
+    {menuItems.map(({id,path,icon,name,activeIcon}) => (
+      <MenuItem key={id} path={path} icon={icon} name={name} activeIcon={activeIcon}/>))}
     </ul>
   </nav>
   )

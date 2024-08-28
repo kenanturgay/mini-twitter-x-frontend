@@ -1,15 +1,24 @@
 import { NavLink } from "react-router-dom"
 
-export const MenuItem = ({to, label }) => {
+export const MenuItem = ({id,path,icon,name,activeIcon}) => {
   return (
-    <li>
-      <NavLink 
-        to={to}    /* mesela "/explore" */
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        <img src={testo} alt= {label}  /* mesela "Explore" *//>
-        <span>{label}  { /* Ana Sayfa */}</span>
-      </NavLink>
-    </li>
+    <li key={id}>
+            <NavLink
+              to={path}
+              className={({ isActive }) =>
+                isActive
+                  ? "flex items-center space-x-4 text-lg p-2 rounded-lg font-bold"
+                  : "flex items-center space-x-4 text-lg p-2 hover:bg-gray-200 rounded-lg"
+              }
+            >
+             {({ isActive }) => (
+          <>
+            <span className="flex items-center justify-center w-6 h-6"
+            >{isActive ? activeIcon : icon}</span>
+            <span>{name}</span>
+          </>
+        )}
+            </NavLink>
+          </li>
   )
 }

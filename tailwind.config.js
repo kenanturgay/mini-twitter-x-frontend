@@ -10,8 +10,8 @@ export default {
         sans: ['Roboto', 'sans-serif'],
       },
       colors: {
-        'twitter-blue': '#1DA1F2',
-        'twitter-light-blue': '#AAB8C2',
+        'twitter-blue': '#1D9BF0',
+        'twitter-light-blue': '#1A8CD8',
       },
     },
   },
