@@ -11,7 +11,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className="h-screen p-4 bg-gray-100">
+    <div className="h-screen p-4 bg-gray-100 w-72 bg-blue-500">
       <ul className="space-y-4">
         {menuItems.map(item => (
           <li key={item.id}>
