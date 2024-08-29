@@ -1,17 +1,17 @@
-import Container from "../layouts/Container"
-import  Feed  from "../layouts/Feed"
-import Sidebar from "../layouts/Sidebar"
-import  Trend  from "../layouts/Trend"
-
-
+import Container from "../layouts/Container";
+import Sidebar from "../layouts/Sidebar";
+import Feed from "../layouts/Feed";
+import Trend from "../layouts/Trend";
+import { Outlet } from "react-router-dom";
 
 export default function MainPage() {
   return (
-        <Container>
-        <Sidebar/>
-        <Feed/>
-        <Trend></Trend>
-        </Container>
-  )
+    <Container>
+      <Sidebar />
+      <div style={{ flex: 1 }}>
+        <Outlet />
+      </div>
+      <Trend />
+    </Container>
+  );
 }
-
