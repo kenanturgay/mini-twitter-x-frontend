@@ -12,6 +12,7 @@ export default {
       colors: {
         'twitter-blue': '#1D9BF0',
         'twitter-light-blue': '#1A8CD8',
+        'tw-hover':'#ECF7FE',
       },
     },
   },

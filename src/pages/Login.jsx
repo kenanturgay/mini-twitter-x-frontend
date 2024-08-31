@@ -1,7 +1,12 @@
-import icon from '../assets/twitter-logo.png'
-import LoginForm from '../layouts/LoginForm'
+import { useContext } from 'react'
+import icon from '../assets/twitter-logo.png';
+import LoginForm from '../Layouts/LoginForm';
+import { UserContext } from '../UserContext';
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
+const {token} = useContext(UserContext);
+
   return (
     <div className="w-[350px] mx-auto mt-[5%] p-5 flex flex-col items-start">
       <img src={icon} alt="Twitter Logo" className="max-w-[13%] h-auto mb-4" />
@@ -11,9 +16,9 @@ export const Login = () => {
         <a href="#forgot-password" className="text-twitter-blue">
           Forgot password?
         </a>
-        <a href="#sign-up" className="text-twitter-blue">
+        <Link to="/signup" className="text-twitter-blue">
           Sign up to Twitter
-        </a>
+        </Link>
       </div>
     </div>
   )

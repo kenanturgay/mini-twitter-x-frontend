@@ -8,7 +8,7 @@ export default function MainPage() {
   return (
     <Container>
       <Sidebar />
-      <div style={{ flex: 1 }}>
+      <div className="flex-1 border-l border-r">
         <Outlet />
       </div>
       <Trend />

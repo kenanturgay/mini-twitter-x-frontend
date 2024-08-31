@@ -10,7 +10,7 @@ export default function TweetCard() {
             <div className="tw-owner ">
                 <div className='flex'>
                 <span className='font-bold mr-2'>Designsta</span>
-                <h1>@inner * 25m</h1>
+                <h1>@inner · 25m</h1>
                 </div>
                 <h1 className="tweet">Tweet Bu</h1>
             </div>
