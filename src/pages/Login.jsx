@@ -1,11 +1,18 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import icon from '../assets/twitter-logo.png';
 import LoginForm from '../Layouts/LoginForm';
 import { UserContext } from '../UserContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Login = () => {
 const {token} = useContext(UserContext);
+const navigate = useNavigate();
+useEffect(()=>{
+  if (token) {
+    navigate('/');
+    return;
+  }
+},[])
 
   return (
     <div className="w-[350px] mx-auto mt-[5%] p-5 flex flex-col items-start">

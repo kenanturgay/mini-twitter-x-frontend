@@ -15,21 +15,21 @@ const Sidebar = () => {
     navigate("/login")
   }
   return (
-    <div className="flex flex-col h-screen p-4 w-72 justify-between border-r">
+    <div className="w-[270px] sticky top-0 flex flex-wrap flex-col h-screen p-4 flex-1 justify-between border-r">
       <div>
         <div className='mb-12'><TwitterLogo/></div>
         <Menu/>
-        <button className="w-11/12 py-3 rounded-full bg-twitter-blue text-white text-lg cursor-pointer mb-4 mt-4 hover:bg-twitter-light-blue">
+        <button className="sm:w-11/12 py-3 rounded-full bg-twitter-blue text-white text-lg cursor-pointer mb-4 mt-4 hover:bg-twitter-light-blue">
           Tweet
         </button>
         </div>
-        <button onClick={handleLogOut} className='flex items-center gap-4 justify-between hover:bg-gray-200'>
+        <button onClick={handleLogOut} className='flex p-2 items-center gap-2 justify-between hover:bg-tw-hover rounded-full'>
           <div className='flex items-center gap-2'>
-          <img src={pp} alt="" />
-          <div>{userData}</div>
+          <img src={pp} alt="" className='w-12 h-12 rounded-full'/>
+          <div className='hidden xl:inline-block max-w-28 flex-shrink-0'>@{userData}</div>
           </div>
-          <img src={vector} alt="" />
-      </button>
+          <img className='hidden md:inline-block' src={vector} alt="" />
+        </button>
     </div>
   );
 };

@@ -16,7 +16,7 @@ export const MenuItem = ({ id, path, icon, name, activeIcon }) => {
             <span className="flex items-center justify-center w-7 h-7">
               {isActive ? activeIcon : icon}
             </span>
-            <span>{name}</span>
+            <span className=" hidden sm:inline-block">{name}</span>
           </>
         )}
       </NavLink>

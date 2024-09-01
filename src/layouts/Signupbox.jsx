@@ -3,9 +3,8 @@ import tw_icon from '../assets/icons/twitter-logo.png'
 import { useForm } from 'react-hook-form';
 import { useAxios, REQ_TYPES } from '../hooks/useAxios';
 import { useNavigate } from 'react-router-dom';
-import Lottie from "lottie-react";
-import loadingtw from '../assets/animations/loading.json'
-import like from '../assets/animations/like.json'
+//import Lottie from "lottie-react";
+////import like from '../assets/animations/like.json'
 import LoginAnimation from '../assets/animations/LoginAnimation';
 
 

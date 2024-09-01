@@ -1,4 +1,11 @@
 import logo from '../assets/icons/twitter-logo.png'
+import star from '../assets/icons/star.png'
+import search from '../assets/icons/search.png'
+import settings from '../assets/icons/settings.png'
+import location from '../assets/icons/location.png'
+import link from '../assets/icons/link.png'
+import birthday from '../assets/icons/birthday.png'
+import date from '../assets/icons/date.png'
 
 import home from '../assets/icons/home.png'
 import homefill from '../assets/icons/homefill.png'
@@ -33,6 +40,24 @@ import threedots from '../assets/icons/threedots.png'
 export const TwitterLogo = () => {
   return (
     <img src={logo} alt="Logo Icon" />
+  )
+}
+
+export const StarIcon = () => {
+  return (
+    <img className="h-5" src={star} alt="Logo Icon" />
+  )
+}
+
+export const SearchIcon = () => {
+  return (
+    <img className="ml-1 h-5" src={search} alt="Logo Icon" />
+  )
+}
+
+export const SettingsIcon = () => {
+  return (
+    <img className="ml-1 h-5" src={settings} alt="Logo Icon" />
   )
 }
 //--Tweet Card Icons---//
@@ -70,6 +95,32 @@ export const StatsIcon = () => {
 export const ThreeDotsIcon = () => {
   return (
     <img src={threedots} alt="" />
+  )
+}
+
+//-------------------/profile icons-----------------------------------//
+
+export const LocationIcon = ({className}) => {
+  return (
+    <img className={className} src={location} alt="" />
+  )
+}
+
+export const LinkIcon = ({className}) => {
+  return (
+    <img className={className} src={link} alt="" />
+  )
+}
+
+export const BirthdayIcon = ({className}) => {
+  return (
+    <img className={className} src={birthday} alt="" />
+  )
+}
+
+export const DateIcon = ({className}) => {
+  return (
+    <img className={className} src={date} alt="" />
   )
 }
 //-------------------Inactive Menu Icons------------------------------//

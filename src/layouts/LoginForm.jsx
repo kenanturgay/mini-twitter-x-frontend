@@ -23,7 +23,7 @@ export default function LoginForm() {
         },
       });
       setToken(response.token);
-      setUserData('@'+formData.username)
+      setUserData(formData.username)
       console.log(response);
       
       navigate('/');

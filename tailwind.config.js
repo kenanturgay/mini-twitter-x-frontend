@@ -11,9 +11,10 @@ export default {
         sans: ['Roboto', 'sans-serif'],
       },
       colors: {
-        'twitter-blue': '#1D9BF0',
-        'twitter-light-blue': '#1A8CD8',
+        'twitter-blue': '#1A8CD8',
+        'twitter-light-blue': '#1D9BF0',
         'tw-hover':'#ECF7FE',
+        'underline-blue' :'#1DA1F2',
       },
     },
   },

@@ -7,6 +7,7 @@ import Profile from "./layouts/Profile";
 import DummyPage from "./pages/DummyPage";
 import Signup from "./pages/Signup";
 import  UserContextProvider  from "./UserContext";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
             <Route path="more" element={<DummyPage />} />
           </Route>
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      
     </Router>
     </UserContextProvider>
   );
