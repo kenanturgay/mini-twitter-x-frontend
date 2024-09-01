@@ -15,7 +15,7 @@ const Sidebar = () => {
     navigate("/login")
   }
   return (
-    <div className="flex flex-col h-screen p-4 w-72 justify-between">
+    <div className="flex flex-col h-screen p-4 w-72 justify-between border-r">
       <div>
         <div className='mb-12'><TwitterLogo/></div>
         <Menu/>

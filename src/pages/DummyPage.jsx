@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function DummyPage() {
   return (
-    <div>DummyPage</div>
+    <div className='flex-1 border'>DummyPage</div>
   )
 }

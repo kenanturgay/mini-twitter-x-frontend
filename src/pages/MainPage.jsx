@@ -7,8 +7,10 @@ import { Outlet } from "react-router-dom";
 export default function MainPage() {
   return (
     <Container>
-      <Sidebar />
-      <div className="flex-1 border-l border-r">
+      <div className="fixed top-0 left-[370px]">
+        <Sidebar/>
+      </div>
+      <div className="ml-[280px] w-[744px]">
         <Outlet />
       </div>
       <Trend />

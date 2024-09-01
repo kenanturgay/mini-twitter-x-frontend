@@ -23,14 +23,56 @@ import profilefill from '../assets/icons/profilefill.png'
 
 import more from '../assets/icons/more.png'
 
+import replyicon from '../assets/icons/replyicon.png'
+import retweeticon from '../assets/icons/retweet.png'
+import likeicon from '../assets/icons/like.png'
+import shareicon from '../assets/icons/share.png';
+import stats from '../assets/icons/stats.png'
+import threedots from '../assets/icons/threedots.png'
 
 export const TwitterLogo = () => {
   return (
     <img src={logo} alt="Logo Icon" />
   )
 }
+//--Tweet Card Icons---//
 
-//-------------------Inactive Icons------------------------------//
+export const ReplyIcon = () => {
+  return (
+    <img src={replyicon} alt="" />
+  )
+}
+
+export const RetweetIcon = () => {
+  return (
+    <img src={retweeticon} alt="" />
+  )
+}
+
+export const LikeIcon = () => {
+  return (
+    <img src={likeicon} alt="" />
+  )
+}
+
+export const ShareIcon = () => {
+  return (
+    <img src={shareicon} alt="" />
+  )
+}
+
+export const StatsIcon = () => {
+  return (
+    <img src={stats} alt="" />
+  )
+}
+
+export const ThreeDotsIcon = () => {
+  return (
+    <img src={threedots} alt="" />
+  )
+}
+//-------------------Inactive Menu Icons------------------------------//
 
 export const HomeIcon = () => {
   return (
@@ -80,7 +122,7 @@ export const MoreIcon = () => {
   )
 }
 
-//-------------------Active Icons------------------------------//
+//-------------------Active Menu Icons------------------------------//
 
 export const HomeIconfill = () => {
   return (
