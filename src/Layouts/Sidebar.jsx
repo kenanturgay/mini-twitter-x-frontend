@@ -15,7 +15,7 @@ const Sidebar = () => {
     navigate("/login")
   }
   return (
-    <div className="w-[270px] sticky top-0 flex flex-wrap flex-col h-screen p-4 flex-1 justify-between border-r">
+    <div className="md:w-[270px] sticky top-0 flex  flex-col h-screen p-4 flex-1 justify-between border-r">
       <div>
         <div className='mb-12'><TwitterLogo/></div>
         <Menu/>

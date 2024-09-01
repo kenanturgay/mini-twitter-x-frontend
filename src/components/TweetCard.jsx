@@ -1,11 +1,17 @@
-import React from 'react'
-import avatar from '../assets/userpics/profilepic.png'
 import { LikeIcon, ReplyIcon, RetweetIcon, ShareIcon, StatsIcon, ThreeDotsIcon } from './Icon';
 import highlighthashtags from '../utils/highlighthashtags'
 const image = false;
 
 
 export default function TweetCard({index,id,username,content,likeCount,rtCount,replyCount}) {
+
+const zeroExcluder = (numbers) => {
+    if (numbers===0) {
+        return ''
+    }
+    else return numbers
+}
+
   return (
     <article id={id} className="flex space-x-3 border-b border-gray-extraLight px-4 py-2">
         <div className="min-w-9">
@@ -27,7 +33,7 @@ export default function TweetCard({index,id,username,content,likeCount,rtCount,r
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>
                         <ReplyIcon className="w-3 h-3" />
                     </div>
-                    <span className='group-hover:text-twitter-light-blue cursor-pointer'>{replyCount}</span>
+                    <span className='group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(replyCount)}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>

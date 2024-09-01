@@ -25,7 +25,7 @@ export default function Signup() {
         navigate('/login');
   };
   return (
-    <div className="flex w-screen h-screen">
+    <div className="flex max-w-screen max-h-screen">
         <div className='w-[1114px] h-screen '>
        <img className='h-full' src={leftside} alt="Signup Profile" />
        </div>

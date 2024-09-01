@@ -10,7 +10,7 @@ export default function MainPage() {
       <div className="relative">
         <Sidebar/>
       </div>
-      <div className="w-[650px]">
+      <div className="w-[650px] min-w-[650px]">
         <Outlet />
       </div>
       <Trend />
