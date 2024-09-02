@@ -19,7 +19,7 @@ const Sidebar = () => {
       <div>
         <div className='mb-12'><TwitterLogo/></div>
         <Menu/>
-        <button className="sm:w-11/12 py-3 rounded-full bg-twitter-blue text-white text-lg cursor-pointer mb-4 mt-4 hover:bg-twitter-light-blue">
+        <button className="sm:w-11/12 py-3 rounded-full bg-twitter-light-blue text-white text-lg cursor-pointer mb-4 mt-4 hover:bg-twitter-blue">
           Tweet
         </button>
         </div>

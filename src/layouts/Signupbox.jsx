@@ -92,7 +92,7 @@ export default function Signupbox({closeSignUpBox }) {
 
                         <button
                             type="submit"
-                            className="w-full mt-3 py-3 rounded-full bg-twitter-blue text-white text-lg cursor-pointer mb-4 hover:bg-twitter-blue-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-twitter-blue"
+                            className="w-full mt-3 py-3 rounded-full bg-twitter-light-blue text-white text-lg cursor-pointer mb-4 hover:bg-twitter-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-twitter-blue"
                         >
                             Sign Up
                         </button>

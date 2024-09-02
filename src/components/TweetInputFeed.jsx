@@ -26,7 +26,14 @@ const handleChange = (e) =>{
               </div>
               <div className="flex justify-between my-1 items-center">
                 <img src={tweetOptions} alt="tweetOptions" className="aspect-auto h-5" />
-                <button onClick={()=> handleTweet(tweetContent)} className="p-2 w-20 rounded-full bg-twitter-blue text-white text-sm cursor-pointer hover:bg-twitter-light-blue">Tweet</button>
+                <button 
+                disabled={!tweetContent}
+                onClick={()=> handleTweet(tweetContent)} 
+                className="p-2 w-20 rounded-full bg-twitter-light-blue 
+                text-white text-sm cursor-pointer hover:bg-twitter-blue
+                disabled:bg-opacity-50 disabled:cursor-default 
+                disabled:hover:bg-twitter-light-blue
+                disabled:hover:bg-opacity-50">Tweet</button>
               </div>
             </div>
           </article>

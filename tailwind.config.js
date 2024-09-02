@@ -15,6 +15,8 @@ export default {
         'twitter-light-blue': '#1D9BF0',
         'tw-hover':'#ECF7FE',
         'underline-blue' :'#1DA1F2',
+        'tweet-retweet':'#06b47b',
+        'tweet-like':'#f91881',
       },
     },
   },

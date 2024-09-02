@@ -54,7 +54,7 @@ export default function LoginForm() {
         {errors.password && <span className="text-red-500 text-sm">{errors.password.message}</span>}
       </div>
       <button
-        className="w-full py-3 rounded-full bg-twitter-blue text-white text-lg cursor-pointer mb-4 hover:bg-twitter-light-blue"
+        className="w-full py-3 rounded-full bg-twitter-light-blue text-white text-lg cursor-pointer mb-4 hover:bg-twitter-blue"
         type="submit"
         disabled={loading} 
       >
