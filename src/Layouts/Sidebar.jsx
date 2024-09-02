@@ -28,7 +28,7 @@ const Sidebar = () => {
           <img src={pp} alt="" className='w-12 h-12 rounded-full'/>
           <div className='hidden xl:inline-block max-w-28 flex-shrink-0'>@{userData}</div>
           </div>
-          <img className='hidden md:inline-block' src={vector} alt="" />
+          <img className='hidden mr-2 md:inline-block' src={vector} alt="" />
         </button>
     </div>
   );

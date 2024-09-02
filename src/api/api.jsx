@@ -7,8 +7,8 @@ export const createApiInstance = () => {
     return axios.create({
         baseURL: "http://localhost:3001/",
         headers: {
-        Authorization: token,
-        "X-LANG": "TR",
+            Authorization: `Bearer ${token}`,
+            "X-LANG": "TR",
         },
     });
 };

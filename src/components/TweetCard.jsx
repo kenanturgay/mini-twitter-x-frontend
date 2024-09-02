@@ -36,13 +36,13 @@ const zeroExcluder = (numbers) => {
                     <span className='group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(replyCount)}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
-                    <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>
+                    <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tweet-retweet group-hover:bg-opacity-10 cursor-pointer'>
                         <RetweetIcon className="w-3 h-3" />
                     </div>
                     <span className='group-hover:text-twitter-light-blue cursor-pointer'>{rtCount}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
-                    <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>
+                    <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tweet-like group-hover:bg-opacity-10 cursor-pointer'>
                         <LikeIcon className="w-3 h-3" />
                     </div>
                     <span className='group-hover:text-twitter-light-blue cursor-pointer'>{likeCount}</span>
