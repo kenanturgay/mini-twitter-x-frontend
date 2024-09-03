@@ -21,7 +21,6 @@ export default function Feed() {
         endpoint: 'tweet',
       });
       setTweets(response.data.reverse());
-
     } catch (err) {
       console.error('Veri Çekilemedi:', err);
     }
