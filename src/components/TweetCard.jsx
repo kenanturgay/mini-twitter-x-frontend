@@ -105,9 +105,10 @@ const zeroExcluder = (numbers) => {
     }
 
   return (
-    <article id={id} className="flex space-x-3 border-b border-gray-extraLight px-4 py-2 hover:bg-gray-50">
-        <div className="min-w-9">
-        <img src={`https://picsum.photos/id/${index+15}/100/100`} alt="Profile" className="w-12 h-12 rounded-full" />
+    <article id={id} className="flex space-x-3 border-b border-gray-extraLight px-4 pt-2 hover:bg-gray-50">
+        <div className="relative flex h-12">
+            <img src={`https://picsum.photos/id/${index+15}/100/100`} alt="Profile" className="w-12 h-12 rounded-full" />
+            <div className="absolute top-full left-1/2 w-px h-12 bg-gray-200 transform -translate-x-1/2"></div>
         </div>
         <div className="flex-1">
             <div className="flex items-center  justify-between">
@@ -147,7 +148,7 @@ const zeroExcluder = (numbers) => {
                     <button onClick={()=> handleLike(id)}className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:text-red-800 group-hover:bg-tweet-like group-hover:bg-opacity-10 cursor-pointer'>
                     {isLiked ? <LikeIcon color='red' lineColor='red' /> : <LikeIcon color='white' lineColor='currentColor' />}
                     </button>
-                    <span className='group-hover:text-twitter-light-blue cursor-pointer'>{likeCounter}</span>
+                    <span className='group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(likeCounter)}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>

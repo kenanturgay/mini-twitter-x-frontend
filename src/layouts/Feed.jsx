@@ -72,7 +72,5 @@ const handleTweet = async (tweet) => {
             replyCount={tweet.replies.length} />))
          }
         </main>
-        
-
   )
 }
