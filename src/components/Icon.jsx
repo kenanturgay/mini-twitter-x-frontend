@@ -1,20 +1,23 @@
-import logo from '../assets/icons/twitter-logo.png'
-import star from '../assets/icons/star.png'
-import search from '../assets/icons/search.png'
-import settings from '../assets/icons/settings.png'
-import location from '../assets/icons/location.png'
-import link from '../assets/icons/link.png'
-import birthday from '../assets/icons/birthday.png'
-import date from '../assets/icons/date.png'
 
-import home from '../assets/icons/home.png'
-import homefill from '../assets/icons/homefill.png'
 
-import explore from '../assets/icons/explore.png'
-import explorefill from '../assets/icons/explorefill.png'
 
-import notifications from '../assets/icons/notifications.png'
-import notificationsfill from '../assets/icons/notificationsfill.png'
+import logo from '../assets/icons/twitter-logo.png';
+import star from '../assets/icons/star.png';
+import search from '../assets/icons/search.png';
+import settings from '../assets/icons/settings.png';
+import location from '../assets/icons/location.png';
+import link from '../assets/icons/link.png';
+import birthday from '../assets/icons/birthday.png';
+import date from '../assets/icons/date.png';
+
+import home from '../assets/icons/home.png';
+import homefill from '../assets/icons/homefill.png';
+
+import explore from '../assets/icons/explore.png';
+import explorefill from '../assets/icons/explorefill.png';
+
+import notifications from '../assets/icons/notifications.png';
+import notificationsfill from '../assets/icons/notificationsfill.png';
 
 import messages from '../assets/icons/messages.png'
 import messagesfill from '../assets/icons/messagesfill.png'

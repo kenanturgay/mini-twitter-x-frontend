@@ -20,12 +20,17 @@ export default function Feed() {
         reqType: REQ_TYPES.GET,
         endpoint: 'tweet',
       });
-      setTweets(response.data);
+      setTweets(response.data.reverse());
 
     } catch (err) {
       console.error('Veri Çekilemedi:', err);
     }
   };
+
+  const handleDelete = (id) => {
+    setTweets(tweets.filter(tweet => tweet.id !== id));
+  };
+
 
   useEffect(() => {
     fetchTweets();
@@ -57,6 +62,7 @@ const handleTweet = async (tweet) => {
           <TweetInputFeed handleTweet={handleTweet}/>
         {tweets.map((tweet,index)=>(
           <TweetCard 
+            onDelete={handleDelete}
             index={index}
             key={tweet.id}
             id={tweet.id}
