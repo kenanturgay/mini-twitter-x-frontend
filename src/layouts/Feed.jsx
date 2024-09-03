@@ -69,7 +69,7 @@ const handleTweet = async (tweet) => {
             content={tweet.content}
             likeCount={tweet.likes}
             rtCount={tweet.retweets}
-            replyCount={tweet.replies.length} />))
+            replyArray={tweet.replies} />))
          }
         </main>
   )

@@ -1,4 +1,4 @@
-import { ReplyIcon, RetweetIcon, ShareIcon, StatsIcon, ThreeDotsIcon } from './Icon';
+import { ReplyIcon, RetweetIcon, ShareIcon, StatsIcon, ThreeDotsIcon } from '../components/Icon';
 import highlighthashtags from '../utils/highlighthashtags'
 import { useContext, useEffect, useRef, useState } from 'react';
 import { REQ_TYPES, useAxios } from '../hooks/useAxios';
@@ -10,7 +10,7 @@ import { UserContext } from '../UserContext';
 const image = false;
 
 
-export default function TweetCard({onDelete,index,id,username,content,likeCount,rtCount,replyArray}) {
+export default function TweetDetails({onDelete,index,id,username,content,likeCount,rtCount,replyArray}) {
     const [isMenuOpen, setIsMenuOpen] = useState(false); //Düzenle-Sil Menüsü
     const [doRequest, data, loading, error] = useAxios(); //Tweet Aksiyonları için
     const [likeCounter, setLikeCounter] = useState(likeCount);

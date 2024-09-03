@@ -18,7 +18,7 @@ export default function Profile() {
         <button className='ml-auto border border-gray-600 rounded-full h-10 w-28 mt-4 mr-4 font-bold'>Edit Profile</button>
       </div>
       <div className='ml-5'>
-      <div className='mt-5 font-bold text-xl'>Berkay</div>
+      <div className='mt-5 font-bold text-xl'>{userData}</div>
       <div className='text-sm text-gray-600'>@{userData}</div>
       <div className='mt-3'>Full-Stack Developer Trainee <span className='text-twitter-blue'>@WorkInTech</span></div>
       </div>
