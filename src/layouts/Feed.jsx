@@ -38,15 +38,16 @@ export default function Feed() {
 //------------------------------------------------------------------------------------
 //Tweet At
 
-const handleTweet = async (tweet) => {
+const handleTweet = async (tweetContent,setTweetContent) => {
   try {
     const response = await doRequest({
       reqType: REQ_TYPES.POST,
       endpoint: 'tweet',
       payload: {
-        content: tweet,
+        content: tweetContent,
       },
     });
+    setTweetContent('');
     fetchTweets();
     console.log(response);
   } catch (err) {

@@ -22,7 +22,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route element={<ProtectedRoutes />}>
           <Route element={<MainPage />}>
-            <Route path="/" element={<TweetDetails />} />
+            <Route path="/" element={<Feed />} />
             <Route path="profile" element={<Profile />} />
             <Route path="explore" element={<DummyPage />} />
             <Route path="notifications" element={<DummyPage />} />

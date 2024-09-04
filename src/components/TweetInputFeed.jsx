@@ -28,7 +28,7 @@ const handleChange = (e) =>{
                 <img src={tweetOptions} alt="tweetOptions" className="aspect-auto h-5" />
                 <button 
                 disabled={!tweetContent}
-                onClick={()=> handleTweet(tweetContent)} 
+                onClick={()=> handleTweet(tweetContent,setTweetContent)} 
                 className="p-2 w-20 rounded-full bg-twitter-light-blue 
                 text-white text-sm cursor-pointer hover:bg-twitter-blue
                 disabled:bg-opacity-50 disabled:cursor-default 

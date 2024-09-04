@@ -132,34 +132,36 @@ const zeroExcluder = (numbers) => {
             </div>
             <p className=" text-gray-800">{highlighthashtags(content)}</p>
             {image && <img src={image} className="my-2 rounded-xl max-h-96" />}
-            <ul className='flex justify-between mt-3 mb-1 w-10/12' >
+            <ul className='flex justify-between mt-3 mb-1 w-full' >
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>
                         <ReplyIcon className="w-3 h-3" />
                     </div>
-                    <span className='group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(replyArray.length)}</span>
+                    <span className='min-w-[48px] group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(replyArray.length)}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tweet-retweet group-hover:bg-opacity-10 cursor-pointer'>
                         <RetweetIcon className="w-3 h-3" />
                     </div>
-                    <span className='group-hover:text-twitter-light-blue cursor-pointer'>{rtCount}</span>
+                    <span className='min-w-[48px] group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(rtCount)}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <button onClick={()=> handleLike(id)}className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:text-red-800 group-hover:bg-tweet-like group-hover:bg-opacity-10 cursor-pointer'>
                     {isLiked ? <LikeIcon color='red' lineColor='red' /> : <LikeIcon color='white' lineColor='currentColor' />}
                     </button>
-                    <span className='min-w-[20px]  group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(likeCounter)}</span>
+                    <span className='min-w-[48px]  group-hover:text-twitter-light-blue cursor-pointer'>{zeroExcluder(likeCounter)}</span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>
                         <ShareIcon className="w-3 h-3" />
                     </div>
+                    <span className='min-w-[48px] group-hover:text-twitter-light-blue cursor-pointer'></span>
                 </li>
                 <li className='flex items-center space-x-1 text-gray-800 group'>
                     <div className='flex items-center justify-center w-7 h-7 p-1 rounded-full group-hover:bg-tw-hover cursor-pointer'>
                         <StatsIcon className="w-3 h-3" />
                     </div>
+                    <span className='min-w-[48px] group-hover:text-twitter-light-blue cursor-pointer'></span>
                 </li>
             </ul>
         </div>
