@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import sufle from '../assets/userpics/sufle.jpeg'
-import profilepic from '../assets/userpics/profilepic.png'
+import sufle from '../assets/usersprofilepictures/sufle.jpeg'
+import avatar from '../assets/usersprofilepictures/profilepic.png'
 import { UserContext } from '../UserContext'
 import { LocationIcon, LinkIcon, BirthdayIcon,DateIcon } from '../components/Icon'
 export default function Profile() {
@@ -12,7 +12,7 @@ export default function Profile() {
       </div>
       <div className='relative'>
         <img src={sufle} alt="Kapak Fotoğrafı" className="w-full" />
-        <img className='absolute rounded-full w-36 -bottom-16 left-6 p-0.5 bg-white border' src={profilepic} alt="Profil Resmi" />
+        <img className='absolute rounded-full w-36 -bottom-16 left-6 p-0.5 bg-white border' src={avatar} alt="Profil Resmi" />
       </div>
       <div className='flex'>
         <button className='ml-auto border border-gray-600 rounded-full h-10 w-28 mt-4 mr-4 font-bold'>Edit Profile</button>

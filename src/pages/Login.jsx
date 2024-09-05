@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react'
 import icon from '../assets/twitter-logo.png';
-import LoginForm from '../Layouts/LoginForm';
+import LoginForm from '../layouts/LoginForm';
 import { UserContext } from '../UserContext';
 import { Link, useNavigate } from 'react-router-dom';
 

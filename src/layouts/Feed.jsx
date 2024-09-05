@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import { useAxios, REQ_TYPES } from '../hooks/useAxios';
 import TweetCard from "../components/TweetCard";
 import HomeHeader from "../components/HomeHeader";
-
-import avatar from "../assets/userpics/profilepic.png"
-import tweetOptions from "../assets/icons/tweet_options.png"
 import TweetInputFeed from "../components/TweetInputFeed";
 
 

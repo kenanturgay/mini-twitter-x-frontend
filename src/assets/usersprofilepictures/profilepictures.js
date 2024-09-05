@@ -9,13 +9,11 @@ const uniqueList = [
 ];
 uniqueList.sort();
 
-const profileObject = {  }
+const profilePictures = {  }
 for (let i = 0; i < uniqueList.length; i++) {
 
-profileObject[uniqueList[i]] = `https://picsum.photos/id/${i+15}/100/100`
+  profilePictures[uniqueList[i]] = `https://picsum.photos/id/${i+15}/100/100`
   ;
 }
-
-console.log(profileObject)
-
-
+console.log(profilePictures)
+export default profilePictures;

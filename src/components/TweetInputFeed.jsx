@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import tweetOptions from "../assets/icons/tweet_options.png"
-import avatar from "../assets/userpics/profilepic.png"
+import avatar from "../assets/usersprofilepictures/profilepic.png"
 
 export default function TweetInputFeed({handleTweet}) {
 const [tweetContent, setTweetContent] = useState('');

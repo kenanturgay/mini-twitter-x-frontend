@@ -6,6 +6,8 @@ import DeleteIcon from '../assets/icons/DeleteIcon';
 import EditIcon from '../assets/icons/EditIcon';
 import LikeIcon from '../assets/icons/LikeIcon';
 import { UserContext } from '../UserContext';
+import profilePictures from '../assets/usersprofilepictures/profilepictures';
+import avatar from '../assets/usersprofilepictures/profilepic.png'
 
 const image = false;
 
@@ -108,7 +110,7 @@ const zeroExcluder = (numbers) => {
   return (
     <article id={id} className="flex space-x-3 border-b border-gray-extraLight px-4 pt-2 hover:bg-gray-50">
         <div className="relative flex ">
-            <img src={`https://picsum.photos/id/${index+15}/100/100`} alt="Profile" className="w-12 h-12 rounded-full" />
+            <img src={username ? profilePictures[username] : avatar} alt="Profile" className="w-12 h-12 rounded-full" />
             
         </div>
         <div className="flex-1">
