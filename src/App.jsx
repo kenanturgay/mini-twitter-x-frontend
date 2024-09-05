@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import Feed from "./layouts/Feed";
 import Profile from "./layouts/Profile";
-import DummyPage from "./pages/DummyPage";
+import DummyPage from "./layouts/DummyPage";
 import Signup from "./pages/Signup";
 import  UserContextProvider  from "./UserContext";
 import NotFound from "./pages/NotFound";
