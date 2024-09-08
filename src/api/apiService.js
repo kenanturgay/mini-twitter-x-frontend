@@ -8,31 +8,36 @@ import { useAxios, REQ_TYPES } from "../hooks/useAxios";
 export const apiService = () => {
   const [doRequest] = useAxios(); 
 
-  const likeTweet = async (id) => {
-    try {
-      const response = await doRequest({
-        reqType: REQ_TYPES.POST,
-        endpoint: `tweet/like/${id}`,
-      });
-      return response;
-    } catch (err) {
-      console.error('Like işlemi başarısız:', err);
-      throw err;
+  const handleLike = async (id) => {
+    const twIndex = likedTweets.indexOf(id);
+    
+    if (twIndex === -1) {
+        try {
+            const response = await doRequest({
+              reqType: REQ_TYPES.POST,
+              endpoint: `tweet/like/${id}`,
+            });
+            setLikedTweets((prevItems) => [...prevItems, id]);
+            const newLikeCount = await fetchLikeCount(id); 
+            setLikeCounter(newLikeCount); 
+      
+        } catch (err) {
+            console.error('Veri Çekilemedi:', err);
+        }
+    } else {
+        try {
+            const response = await doRequest({
+              reqType: REQ_TYPES.DELETE,
+              endpoint: `tweet/like/${id}`,
+            });
+            setLikedTweets((prevItems) => prevItems.filter((tweet) => tweet !== id));
+            const newLikeCount = await fetchLikeCount(id); 
+            setLikeCounter(newLikeCount); 
+        } catch (err) {
+            console.error('Veri Çekilemedi:', err);
+        }
     }
-  };
-
-  const unlikeTweet = async (id) => {
-    try {
-      const response = await doRequest({
-        reqType: REQ_TYPES.DELETE,
-        endpoint: `tweet/like/${id}`,
-      });
-      return response;
-    } catch (err) {
-      console.error('Unlike işlemi başarısız:', err);
-      throw err;
-    }
-  };
+};
 
   const fetchTweetLikes = async (id) => {
     try {
@@ -61,8 +66,7 @@ export const apiService = () => {
   };
 
   return {
-    likeTweet,
-    unlikeTweet,
+    handleLike,
     fetchTweetLikes,
     deleteTweet,
   };

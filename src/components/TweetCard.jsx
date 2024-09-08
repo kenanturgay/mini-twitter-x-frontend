@@ -14,7 +14,7 @@ const image = false;
 
 export default function TweetCard({onDelete,index,id,username,content,likeCount,rtCount,replyArray}) {
     const [isMenuOpen, setIsMenuOpen] = useState(false); //Düzenle-Sil Menüsü
-    const [doRequest, data, loading, error] = useAxios(); //Tweet Aksiyonları için
+    const [doRequest] = useAxios(); //Tweet Aksiyonları için
     const [likeCounter, setLikeCounter] = useState(likeCount);
     const {userData, likedTweets, setLikedTweets} = useContext(UserContext);
 
@@ -86,7 +86,7 @@ export default function TweetCard({onDelete,index,id,username,content,likeCount,
         };
       }, []);
 
-//--Like ile 0'a atacağın like 1 e çekiliyor mu kontrol et
+
 const zeroExcluder = (numbers) => {
     if (numbers===0) {
         return ''
